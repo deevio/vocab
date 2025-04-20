@@ -566,11 +566,11 @@
             wordForm: document.getElementById('word-form'),
             modalTitle: document.getElementById('modal-title'),
             modalAction: document.getElementById('modal-action'),
+            wordId: document.getElementById('word-id'),
             frenchWord: document.getElementById('french-word'),
             englishWord: document.getElementById('english-word'),
             phoneticInput: document.getElementById('phonetic'),
             wordStatus: document.getElementById('word-status'),
-            wordId: document.getElementById('word-id'),
             deleteModal: document.getElementById('delete-modal'),
             confirmDelete: document.getElementById('confirm-delete'),
             wordToDelete: document.getElementById('word-to-delete'),
@@ -1123,6 +1123,7 @@
             updateFlashcard();
             updateDueCounts();
             prepareStats();
+            updateWordCount();
         }
         
         function importCSVWords(e) {
@@ -1198,6 +1199,7 @@
             updateFlashcard();
             updateDueCounts();
             prepareStats();
+            updateWordCount();
         }
         
         function openDeleteWordModal(id) {
@@ -1224,6 +1226,7 @@
             updateFlashcard();
             updateDueCounts();
             prepareStats();
+            updateWordCount();
         }
         
         // Flashcard functions
