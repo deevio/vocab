@@ -33,6 +33,16 @@
         .play-icon {
             transition: all 0.2s ease;
         }
+        .play-icon .fa-volume-up {
+            color: #1e40af; /* blue-800 */
+            transition: color 0.2s;
+        }
+        .play-icon:hover {
+            background-color: #1e40af !important;
+        }
+        .play-icon:hover .fa-volume-up {
+            color: #fff;
+        }
         .clickable {
             cursor: pointer;
             transition: all 0.2s;
@@ -507,8 +517,8 @@
                 <div class="flex items-baseline gap-4">
                     <h3 id="spoken-word" class="text-2xl font-playfair font-medium">Select a word</h3>
                     <span id="phonetic-spelling" class="text-sm text-gray-600 phonetic-guide"></span>
-                    <button id="play-current-word" class="ml-auto text-sm text-frenchBlue hover:underline flex items-center gap-1">
-                        Play
+                    <button id="play-current-word" class="ml-auto flex items-center justify-center w-8 h-8 rounded-full bg-frenchBlue text-white hover:bg-blue-800 transition-colors play-icon" title="Play pronunciation">
+                        <i class="fas fa-volume-up"></i>
                     </button>
                 </div>
                 <p id="word-translation" class="text-gray-700 mt-1"><span class="font-medium">English:</span></p>
