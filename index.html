@@ -922,7 +922,7 @@
         // Load YouGlish widget
         function loadYouGlishWidget(word, stopVideo = false) {
             // Escape special characters and normalize
-            const cleanWord = word.replace(/[^\w\s]/g, '').trim();
+            const cleanWord = word.replace(/[^\p{L}\s'-]/gu, '').trim();
             if (!cleanWord) return;
             
             // Get selected accent (fr = French, qc = Quebec)
